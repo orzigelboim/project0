@@ -1,3 +1,12 @@
+:root {
+    --bg: #ffffff;
+    --text: #202124;
+    --muted: #5f6368;
+    --border: #dadce0;
+    --blue: #1a73e8;
+    --surface: #f8f9fa;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -29,7 +38,7 @@ nav li {
 }
 
 nav ul li a {
-    color: rgba(0, 0, 0, .87);
+    color: var(--text);
     display: inline-block;
     font-family: arial, sans-serif;
     font-size: 13px;
@@ -66,7 +75,7 @@ nav ul li a:hover {
   position: absolute;
   bottom: 15px;
   right: 10px;   
-  color: #4285f4;
+  color: var(--blue);
   font: 16px/16px Arial, sans-serif;
 }
 
@@ -79,10 +88,10 @@ nav ul li a:hover {
     height: 36px;
     line-height: 36px;
     padding: 0 16px;
-    background: #f8f9fa;
-    border: 1px solid #f8f9fa;
+    background: var(--surface);
+    border: 1px solid var(--surface);
     border-radius: 8px;
-    color: #3c4043;
+    color: var(--text);
     font: 400 12px Arial, sans-serif;
     text-align: center;
     cursor: pointer;
@@ -92,8 +101,8 @@ nav ul li a:hover {
 }
 
 .button:hover {
-    background: #f8f9fa;
-    border-color: #dadce0;
+    background: var(--surface);
+    border-color: var(--border);
     box-shadow: none;
 }
 
@@ -102,13 +111,12 @@ nav ul li a:hover {
     outline: none;
 }
 
-
 .custom-input {
     display: flex;
     width: 80vh;
     min-height: 50px;
-    background: #fff;
-    border: 1px solid #dadce0;
+    background: var(--bg);
+    border: 1px solid var(--border);
     box-shadow: 0px 3px 10px 0px rgba(31, 31, 31, 0.08);
     border-radius: 26px;
     margin: 0 0 10px 0;
