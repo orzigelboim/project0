@@ -1,0 +1,126 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    padding-right: 50px;
+    padding-top: 12px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: rgba(0, 0, 0, .87);
+    display: inline-block;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    text-decoration: none;
+    margin-right: 0.7em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    text-align: center;
+}
+
+.container form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo-container {
+  position: relative;
+  display: inline-block;
+}
+
+.logo {
+    margin-bottom: 10px;
+}
+
+.logo-photos {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;   
+  color: #4285f4;
+  font: 16px/16px Arial, sans-serif;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+.button {
+    width: 110px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    background: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 8px;
+    color: #3c4043;
+    font: 400 12px Arial, sans-serif;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    transition: background-color .15s, border-color .15s;
+}
+
+.button:hover {
+    background: #f8f9fa;
+    border-color: #dadce0;
+    box-shadow: none;
+}
+
+.button:focus,
+.button:focus-visible {
+    outline: none;
+}
+
+
+.custom-input {
+    display: flex;
+    width: 80vh;
+    min-height: 50px;
+    background: #fff;
+    border: 1px solid #dadce0;
+    box-shadow: 0px 3px 10px 0px rgba(31, 31, 31, 0.08);
+    border-radius: 26px;
+    margin: 0 0 10px 0;
+    padding: 0 15px;
+    outline: none;
+}
+
+.custom-input:hover {
+    box-shadow: 0 3px 9px rgba(32, 33, 36, 0.45);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+.custom-input:focus {
+    border-color: white;
+}
